@@ -12,7 +12,7 @@ public class OrderItem
     public virtual Order Order { get; set; }
 
     [ForeignKey("Product")]
-    public int ProductId { get; set; }
+    public Guid ProductId { get; set; }
     public virtual Product Product { get; set; }
 
     public int Quantity { get; set; }

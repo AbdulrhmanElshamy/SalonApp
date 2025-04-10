@@ -12,15 +12,15 @@ public class Review
     public virtual ApplicationUser User { get; set; }
 
     [ForeignKey("Salon")]
-    public int SalonId { get; set; }
+    public Guid SalonId { get; set; }
     public virtual Salon Salon { get; set; }
 
     [ForeignKey("Service")]
-    public int? ServiceId { get; set; }
+    public Guid? ServiceId { get; set; }
     public virtual Service Service { get; set; }
 
     [ForeignKey("Product")]
-    public int? ProductId { get; set; } 
+    public Guid? ProductId { get; set; } 
     public virtual Product Product { get; set; }
 
     public int Rating { get; set; } 
